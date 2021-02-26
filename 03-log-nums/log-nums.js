@@ -1,6 +1,7 @@
 function logNums(num){
 
     var result=new Array()
+    
     for(var i = 1; i<=num; i++){
         result.push(i)
     }
