@@ -39,6 +39,23 @@ const sumArray=(arry)=>(
 )
 
 
+const fizzBuzz=(arry)=>{
+    result=[]
+
+    for(var i=0; i<arry.length; i++){
+        if(arry[i]%3==0 && arry[i]%5==0){
+            result.push('Fizz Buzz')
+        }else if(arry[i]%3==0){
+            result.push('Fizz')
+        }else if(arry[i]%5==0){
+            result.push('Buzz')
+        }else{
+            result.push(arry[i])
+        }
+    }
+    return result
+}
+
 module.exports={
     add: add,
     subtract: subtract,
@@ -46,5 +63,6 @@ module.exports={
     divide: divide,
     oddOrEven:oddOrEven,
     logNums: logNums,
-    sumArray: sumArray
+    sumArray: sumArray,
+    fizzBuzz: fizzBuzz
 }

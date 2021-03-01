@@ -36,4 +36,10 @@ describe('Sum Array',()=>{
     })
 })
 
+describe('Fizz Buzz',()=>{
+    test('returns an array with numbers divisible by 3 and 5 display FizzBuzz, numbers divisible by 3 display Fizz, and numbers divisible by 5 display Buzz',()=>{
+        expect(functions.fizzBuzz([13, 14, 15, 16, 17, 18, 19, 20])).toEqual([13,14,'Fizz Buzz', 16, 17, 'Fizz', 19, 'Buzz'])
+    })
+})
+
 
