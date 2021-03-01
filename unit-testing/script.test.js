@@ -1,6 +1,6 @@
 const functions=require('./script.js')
 
-describe('arithmetic (add, subtract, multiply, divide)', ()=>{
+describe('Arithmetic (add, subtract, multiply, divide)', ()=>{
     test('Adds 10 and 24 to equal 34', ()=>{
         expect(functions.add(10,24)).toBe(34)
     })
@@ -28,6 +28,12 @@ describe('Log Numbers',()=>{
     test('returns an array with numbers 1 to num',()=>(
         expect(functions.logNums(10)).toEqual([1,2,3,4,5,6,7,8,9,10])
     ))
+})
+
+describe('Sum Array',()=>{
+    test('return the sum of all the numbers in the array', ()=>{
+        expect(functions.sumArray([4, 8, 15, 16, 23, 42])).toBe(108)
+    })
 })
 
 

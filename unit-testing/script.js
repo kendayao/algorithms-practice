@@ -32,6 +32,12 @@ const logNums = (num)=>{
     return result
 }
 
+const sumArray=(arry)=>(
+    arry.reduce((accumalator, currentValue)=>(
+        accumalator+currentValue
+    ))
+)
+
 
 module.exports={
     add: add,
@@ -39,5 +45,6 @@ module.exports={
     multiply: multiply,
     divide: divide,
     oddOrEven:oddOrEven,
-    logNums: logNums
+    logNums: logNums,
+    sumArray: sumArray
 }
