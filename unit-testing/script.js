@@ -56,6 +56,17 @@ const fizzBuzz=(arry)=>{
     return result
 }
 
+const maxNum=(arry)=>{
+    var largestNum=0
+    for(var i=0; i<arry.length; i++){
+        if(arry[i]>largestNum){
+            largestNum=arry[i]
+        }
+    }
+    return largestNum
+}
+
+
 module.exports={
     add: add,
     subtract: subtract,
@@ -64,5 +75,6 @@ module.exports={
     oddOrEven:oddOrEven,
     logNums: logNums,
     sumArray: sumArray,
-    fizzBuzz: fizzBuzz
+    fizzBuzz: fizzBuzz,
+    maxNum: maxNum
 }

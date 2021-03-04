@@ -42,4 +42,10 @@ describe('Fizz Buzz',()=>{
     })
 })
 
+describe('Max Number',()=>{
+    test('returns the largest number in the array',()=>{
+        expect(functions.maxNum([2, 3, -2, 99, 100, 2222, 321])).toBe(2222)
+    })
+})
+
 
