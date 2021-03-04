@@ -3,7 +3,9 @@ def countdown(num):
     
     numListReversed=numList[::-1]
 
-    for x in numListReversed:
-        print(x)
+    # for x in numListReversed:
+    #     print(x)
 
-countdown(25)
+    return numListReversed
+
+print(countdown(25))
