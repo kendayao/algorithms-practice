@@ -48,4 +48,16 @@ describe('Max Number',()=>{
     })
 })
 
+describe('Vowel Count', ()=>{
+    test('should return the number 3 when given the string programmer',()=>{
+        expect(functions.vowelCount('programmer')).toBe(3)
+    })
+    test('should return the number 8 when given the string I think, therefore I am.',()=>{
+        expect(functions.vowelCount('I think, therefore I am.')).toBe(8)
+    })
+    test('should return the number 3 when given the string ""',()=>{
+        expect(functions.vowelCount('')).toBe(0)
+    })
+})
+
 

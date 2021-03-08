@@ -1,6 +1,6 @@
 # // Write code to return the the number of vowels in `str`
 
-def vowelCount(str):
+def vowel_count(str):
 
     count=0
     
@@ -14,4 +14,4 @@ def vowelCount(str):
     return count
 
 
-print(vowelCount(''))
+print(vowel_count('programmer'))
