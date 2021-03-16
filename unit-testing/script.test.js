@@ -60,4 +60,13 @@ describe('Vowel Count', ()=>{
     })
 })
 
+describe('is Palindrome', ()=>{
+    test('should return false when given the string engage',()=>{
+        expect(functions.isPalindrome('engage')).toBe(false)
+    })
+    test('should return false when given the string radar',()=>{
+        expect(functions.isPalindrome('radar')).toBe(true)
+    })
+})
+
 

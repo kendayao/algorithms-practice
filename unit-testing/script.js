@@ -78,6 +78,19 @@ const vowelCount=(str)=>{
     return count
 }
 
+const isPalindrome=(str)=>{
+    const reverseString=[]
+
+    for(var i=str.length-1; i>=0; i--){
+        reverseString.push(str[i])
+    }
+    if(reverseString.join('')==str){
+        return true
+    }else{
+        return false
+    }
+}
+
 
 module.exports={
     add: add,
@@ -89,5 +102,6 @@ module.exports={
     sumArray: sumArray,
     fizzBuzz: fizzBuzz,
     maxNum: maxNum,
-    vowelCount: vowelCount
+    vowelCount: vowelCount,
+    isPalindrome: isPalindrome
 }
