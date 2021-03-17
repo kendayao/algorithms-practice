@@ -91,6 +91,16 @@ const isPalindrome=(str)=>{
     }
 }
 
+const factorial=(num)=>{
+
+    var count=1
+    for(var i=1; i<=num; i++){
+        count=count*i
+    }
+
+    return count
+}
+
 
 module.exports={
     add: add,
@@ -103,5 +113,6 @@ module.exports={
     fizzBuzz: fizzBuzz,
     maxNum: maxNum,
     vowelCount: vowelCount,
-    isPalindrome: isPalindrome
+    isPalindrome: isPalindrome,
+    factorial: factorial
 }

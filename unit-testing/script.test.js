@@ -69,4 +69,16 @@ describe('is Palindrome', ()=>{
     })
 })
 
+describe('factorial', ()=>{
+    test('should return the factorial of 6 which is 720',()=>{
+        expect(functions.factorial(6)).toBe(720)
+    })
+    test('should return the factorial of 3 which is 6',()=>{
+        expect(functions.factorial(3)).toBe(6)
+    })
+    test('should return the factorial of 0 which is 1',()=>{
+        expect(functions.factorial(1)).toBe(1)
+    })
+})
+
 
