@@ -101,6 +101,21 @@ const factorial=(num)=>{
     return count
 }
 
+const titleCase=(str)=>{
+
+    const strArry=str.split(' ')
+    const result=[]
+    for(var i=0; i<strArry.length; i++){
+        const firstLetter=strArry[i][0].toUpperCase()
+        const restOfWord=strArry[i].substring(1, strArry[i].length)
+        result.push(firstLetter+restOfWord)
+    }
+
+    return result.join(' ')
+}
+
+
+
 
 module.exports={
     add: add,
@@ -114,5 +129,6 @@ module.exports={
     maxNum: maxNum,
     vowelCount: vowelCount,
     isPalindrome: isPalindrome,
-    factorial: factorial
+    factorial: factorial,
+    titleCase: titleCase
 }

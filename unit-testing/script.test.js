@@ -60,7 +60,7 @@ describe('Vowel Count', ()=>{
     })
 })
 
-describe('is Palindrome', ()=>{
+describe('Is Palindrome', ()=>{
     test('should return false when given the string engage',()=>{
         expect(functions.isPalindrome('engage')).toBe(false)
     })
@@ -69,7 +69,7 @@ describe('is Palindrome', ()=>{
     })
 })
 
-describe('factorial', ()=>{
+describe('Factorial', ()=>{
     test('should return the factorial of 6 which is 720',()=>{
         expect(functions.factorial(6)).toBe(720)
     })
@@ -80,5 +80,12 @@ describe('factorial', ()=>{
         expect(functions.factorial(1)).toBe(1)
     })
 })
+
+describe('Title Case',()=>{
+    test('should return a string with the first letter of each word capiltalized',()=>{
+        expect(functions.titleCase('a lannister always pays its debts')).toEqual('A Lannister Always Pays Its Debts')
+    })
+})
+
 
 
