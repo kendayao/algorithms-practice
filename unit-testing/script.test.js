@@ -87,5 +87,11 @@ describe('Title Case',()=>{
     })
 })
 
+describe('Swap Case', ()=>{
+    test('should return the same strung but capital letters are reveresd',()=>{
+        expect(functions.swapCase('Luke, I Am Your Father')).toEqual('lUKE, i aM yOUR fATHER')
+    })
+})
+
 
 
