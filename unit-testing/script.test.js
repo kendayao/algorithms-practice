@@ -93,5 +93,11 @@ describe('Swap Case', ()=>{
     })
 })
 
+describe('Longest Word', ()=>{
+    test('given the string "i love programming" should return the longest word "programming"',()=>{
+        expect(functions.longestWord('i love programming')).toBe('programming')
+    })
+})
+
 
 

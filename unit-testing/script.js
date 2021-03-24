@@ -126,6 +126,18 @@ const swapCase=(str)=>{
     return result.join('')
 }
 
+const longestWord=str=>{
+
+    const strArry=str.split(' ')
+    let result=''
+    
+    for(let i=0; i<strArry.length;i++){
+        if(strArry[i].length>longestWord.length){
+            result=strArry[i]
+        }
+    }
+    return result
+}
 
 
 
@@ -144,5 +156,6 @@ module.exports={
     isPalindrome: isPalindrome,
     factorial: factorial,
     titleCase: titleCase,
-    swapCase: swapCase
+    swapCase: swapCase,
+    longestWord: longestWord
 }
