@@ -2,4 +2,15 @@
 
 const acronymBuilder=(str)=>{
 
+    const strArry=str.split(' ')
+    const acronymResult=[]
+
+    for(let i=0; i<strArry.length; i++){
+        const firstLetter=strArry[i].charAt(0)
+        acronymResult.push(firstLetter.toUpperCase())
+    }
+
+    return acronymResult.join('')
 }
+
+console.log(acronymBuilder('i love programming'))

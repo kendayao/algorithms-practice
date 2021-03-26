@@ -139,6 +139,19 @@ const longestWord=str=>{
     return result
 }
 
+const acronymBuilder=(str)=>{
+
+    const strArry=str.split(' ')
+    const acronymResult=[]
+
+    for(let i=0; i<strArry.length; i++){
+        const firstLetter=strArry[i].charAt(0)
+        acronymResult.push(firstLetter.toUpperCase())
+    }
+
+    return acronymResult.join('')
+}
+
 
 
 
@@ -157,5 +170,6 @@ module.exports={
     factorial: factorial,
     titleCase: titleCase,
     swapCase: swapCase,
-    longestWord: longestWord
+    longestWord: longestWord,
+    acronymBuilder: acronymBuilder
 }

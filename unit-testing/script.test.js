@@ -99,5 +99,10 @@ describe('Longest Word', ()=>{
     })
 })
 
+describe('Acronym Builder', ()=>{
+    test('given the string "i love programming" should return the acronym "ILP"',()=>{
+        expect(functions.acronymBuilder('i love programming')).toBe('ILP')
+    })
+})
 
 
