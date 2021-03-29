@@ -6,7 +6,7 @@ const longestWord=str=>{
     let result=''
     
     for(let i=0; i<strArry.length;i++){
-        if(strArry[i].length>longestWord.length){
+        if(strArry[i].length>result.length){
             result=strArry[i]
         }
     }
