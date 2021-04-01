@@ -1,4 +1,4 @@
-def acroynm_builder(string):
+def acronym_builder(string):
 
     stringList=string.split(' ')
     acronymResult=[]
@@ -9,4 +9,4 @@ def acroynm_builder(string):
 
     return ''.join(acronymResult)
 
-print(acroynm_builder('i love programming'))
+print(acronym_builder('i love programming'))
