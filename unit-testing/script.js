@@ -152,6 +152,18 @@ const acronymBuilder=(str)=>{
     return acronymResult.join('')
 }
 
+const reverseWords=(str)=>{
+
+    const strArray=str.split(' ')
+    result=[]
+
+    for(let i=strArray.length-1; i>=0; i--){
+        result.push(strArray[i])
+    }
+
+    return result.join(' ')
+}
+
 
 
 
@@ -171,5 +183,6 @@ module.exports={
     titleCase: titleCase,
     swapCase: swapCase,
     longestWord: longestWord,
-    acronymBuilder: acronymBuilder
+    acronymBuilder: acronymBuilder,
+    reverseWords: reverseWords
 }

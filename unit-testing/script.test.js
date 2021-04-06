@@ -105,4 +105,10 @@ describe('Acronym Builder', ()=>{
     })
 })
 
+describe('Reverse Words', ()=>{
+    test('given the string "just keep swimming" should return the reversed string "swimming just keep"',()=>{
+        expect(functions.reverseWords('just keep swimming')).toEqual('swimming keep just')
+    })
+})
+
 
