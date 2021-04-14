@@ -13,7 +13,7 @@ const reverseAll=(str)=>{
         result.push(word.split('').reverse().join(''))
     }
 
-    return result
+    return result.join(' ')
 
 }
 

@@ -111,4 +111,10 @@ describe('Reverse Words', ()=>{
     })
 })
 
+describe('Reverse All', ()=>{
+    test('given tthe string "just keep swimming" should return the reversed string and the reversed words "gnimmiws peek tsuj"',()=>{
+        expect(functions.reverseAll('just keep swimming')).toEqual('gnimmiws peek tsuj')
+    })
+})
+
 

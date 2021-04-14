@@ -164,7 +164,23 @@ const reverseWords=(str)=>{
     return result.join(' ')
 }
 
+const reverseAll=(str)=>{
 
+    const strArray=str.split(' ')
+    const reverseArray=[]
+    
+    for(let i=strArray.length-1; i>=0;i--){
+        reverseArray.push(strArray[i])
+    }
+
+    const result=[]
+    for(let i=0; i<reverseArray.length; i++){
+        var word=reverseArray[i]
+        result.push(word.split('').reverse().join(''))
+    }
+
+    return result.join(' ')
+}
 
 
 module.exports={
@@ -184,5 +200,6 @@ module.exports={
     swapCase: swapCase,
     longestWord: longestWord,
     acronymBuilder: acronymBuilder,
-    reverseWords: reverseWords
+    reverseWords: reverseWords,
+    reverseAll: reverseAll
 }
