@@ -1,8 +1,9 @@
-def reverseAll(string):
+def reverse_all(string):
     stringList=string.split(' ')
+    reverseString=stringList[::-1]
     reverseArray=[]
 
-    for word in stringList: 
+    for word in reverseString: 
         reverseArray.append(word)
 
     result=[]
@@ -13,4 +14,4 @@ def reverseAll(string):
     return ' '.join(result)
 
     
-print(reverseAll('just keep swimming'))
+print(reverse_all('just keep swimming'))
